@@ -108,6 +108,7 @@ alias gcm="git commit -am "
 alias gc="git checkout "
 alias gcb="git checkout -b "
 alias grh="git reset --hard"
+alias gdt="git difftool"
 
 # Project specific aliases
 alias mml='./gradlew installMobileAndroidDevelopmentDebug'

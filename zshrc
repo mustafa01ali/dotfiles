@@ -102,12 +102,12 @@ alias rip="youtube-dl -x --audio-quality 0"
 alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 
 # Git aliases
-# alias gcl="git clone "
-# alias gp="git pull"
-# alias gcm="git commit -am "
-# alias gc="git checkout "
-# alias gcb="git checkout -b "
-# alias grh="git reset --hard"
+alias gcl="git clone "
+alias gp="git pull"
+alias gcm="git commit -am "
+alias gc="git checkout "
+alias gcb="git checkout -b "
+alias grh="git reset --hard"
 
 # Project specific aliases
 alias mml='./gradlew installMobileAndroidDevelopmentDebug'

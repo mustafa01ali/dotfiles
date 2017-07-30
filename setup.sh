@@ -1,14 +1,14 @@
 #!/bin/bash
 ############################
 # .setup.sh
-# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles and installs zsh if not already installed
+# This script creates symlinks from the home directory to any desired dotfiles in /dotfiles and installs zsh if not already installed
 ############################
 
 ########## Variables
 
-dir=~/dotfiles                    # dotfiles directory
-olddir=~/dotfiles_old             # old dotfiles backup directory
-files="zshrc oh-my-zsh"    # list of files/folders to symlink in homedir
+dir=~/Development/git/personal/dotfiles     # dotfiles directory
+olddir=~/dotfiles_old                       # old dotfiles backup directory
+files="zshrc oh-my-zsh"                     # list of files/folders to symlink in homedir
 
 ##########
 

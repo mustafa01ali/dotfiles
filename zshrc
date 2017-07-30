@@ -1,12 +1,12 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/mustafa/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="lambda-mod"
+ZSH_THEME="robbyrussell"
+# ZSH_THEME="lambda-mod"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -62,8 +62,6 @@ export PATH
 
 export EDITOR="/usr/local/bin/atom"
 
-export JIRA_URL="https://jira.r.mutualmobile.com"
-
 #export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -104,27 +102,11 @@ alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
 # Git aliases
 alias gcl="git clone "
 alias gp="git pull"
+alias gs="git status"
 alias gcm="git commit -am "
 alias gc="git checkout "
 alias gcb="git checkout -b "
 alias grh="git reset --hard"
 alias gdt="git difftool"
 
-# Project specific aliases
-alias mml='./gradlew installMobileAndroidDevelopmentDebug'
-alias mmlc='./gradlew app:checkstyle lintMobileAndroidDevelopmentDebug'
-
 eval "$(thefuck --alias)"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/mustafa/Development/google-cloud/google-cloud-sdk/path.zsh.inc ]; then
-  source '/Users/mustafa/Development/google-cloud/google-cloud-sdk/path.zsh.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f /Users/mustafa/Development/google-cloud/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/Users/mustafa/Development/google-cloud/google-cloud-sdk/completion.zsh.inc'
-fi
-
-# Harvest CLI auto-complete
-complete -W "`cat ~/.hcl/aliases`" hcl

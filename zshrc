@@ -108,5 +108,6 @@ alias gc="git checkout "
 alias gcb="git checkout -b "
 alias grh="git reset --hard"
 alias gdt="git difftool"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 eval "$(thefuck --alias)"

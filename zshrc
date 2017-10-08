@@ -53,7 +53,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git colored-man-pages jira)
 
 # User configuration
-export ANDROID_HOME=~/Development/android-sdk-macosx
+export ANDROID_HOME=/Users/mustafa/Library/Android/sdk
 
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 PATH=$PATH:$ANDROID_HOME/tools
@@ -98,12 +98,16 @@ alias ll="ls -ll"
 alias la="ll -a"
 alias rip="youtube-dl -x --audio-quality 0"
 alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
+alias jserve="bundle exec jekyll serve"
 
 # Git aliases
 alias gcl="git clone "
 alias gp="git pull"
 alias gs="git status"
+alias ga="git add ."
 alias gcm="git commit -am "
+alias gpo="git push origin "
+alias gpom="git push origin master"
 alias gc="git checkout "
 alias gcb="git checkout -b "
 alias grh="git reset --hard"
@@ -111,3 +115,8 @@ alias gdt="git difftool"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 eval "$(thefuck --alias)"
+
+## Spoof
+alias shields-status="spoof list"
+alias shields-up="sudo spoof randomize wi-fi"
+alias shields-down="sudo spoof reset wi-fi"

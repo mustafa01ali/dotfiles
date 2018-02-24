@@ -1,12 +1,15 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_151`
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
-# ZSH_THEME="lambda-mod"
+ZSH_THEME="cloud"
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -57,6 +60,7 @@ export ANDROID_HOME=/Users/mustafa/Library/Android/sdk
 
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 PATH=$PATH:$ANDROID_HOME/tools
+PATH=$PATH:$ANDROID_HOME/tools/bin
 PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH
 
@@ -113,6 +117,8 @@ alias gcb="git checkout -b "
 alias grh="git reset --hard"
 alias gdt="git difftool"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+alias gw="./gradlew "
 
 eval "$(thefuck --alias)"
 
